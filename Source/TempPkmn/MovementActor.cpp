@@ -41,7 +41,7 @@ AMovementActor::AMovementActor()
 	}
 
 	// Definition for the Particle System 
-	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExplosionEffect(TEXT("/Game/StarterContent/Particles/P_Explosion.P_Explosion"));
+	static ConstructorHelpers::FObjectFinder<UParticleSystem> DefaultExplosionEffect(TEXT("/Game/P_Fire.P_Fire"));
 
 	// Set the Effect if we successfully found a particle system to use
 	if (DefaultExplosionEffect.Succeeded()) {

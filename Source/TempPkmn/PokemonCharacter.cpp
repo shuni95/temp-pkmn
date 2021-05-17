@@ -109,9 +109,6 @@ float APokemonCharacter::TakeDamage(float DamageTaken, struct FDamageEvent const
         float damageApplied = CurrentHealth - DamageTaken;
         SetCurrentHealth(damageApplied);
         return damageApplied;
-    } else {
-        FString healthMessage = FString::Printf(TEXT("%s is already dead..."), *GetFName().ToString());
-        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, healthMessage);
     }
 
     return 0.0f;
